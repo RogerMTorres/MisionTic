@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Arrays",
+            "request": "launch",
+            "mainClass": "Clase3.Clase3.Arrays",
+            "projectName": "Proyectos_d4ded81c"
+        },
+        {
+            "type": "java",
             "name": "Launch NuevoProyecto",
             "request": "launch",
             "mainClass": "NuevoProyecto",
