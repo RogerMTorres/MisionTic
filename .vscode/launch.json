@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "nuevaclase.App",
+            "projectName": "Proyectos_d4ded81c"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Proyectos_d4ded81c"
+        },
+        {
+            "type": "java",
             "name": "Launch Arrays",
             "request": "launch",
             "mainClass": "Clase3.Clase3.Arrays",

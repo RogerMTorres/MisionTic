@@ -1,25 +1,30 @@
+package nuevaclase;
 public class Dispositivo {
     //constantes y atributos
     Double precioBase;
     Integer Peso;
     char Consumow;
-    int adiccion =0;
-    char CONSUMO_W_BASE ='F';
-    Double PRECIO_BASE = 100.0;
-    Integer PESO_BASE = 1;
+    Double adiccion;
+    char CONSUMO_W_BASE;
+    Double PRECIO_BASE;
+    Integer PESO_BASE;
 
 
     //Constructores
     public Dispositivo(){
-
+    CONSUMO_W_BASE ='F';
+    PRECIO_BASE = 100.0;
+    PESO_BASE = 1;
     }
     
     public Dispositivo(Double precioBase, Integer peso){
-        //codigo
+        this.precioBase = precioBase;
+        comprobarPeso(peso);
     }
     
     public Dispositivo(Double precioBase, Integer peso, char consumoW){
-        //codigo
+        this.precioBase = precioBase;
+        comprobarPeso(peso);
         comprobarconsumoW(consumoW);
     }
 
@@ -51,25 +56,22 @@ public class Dispositivo {
     } 
     public void comprobarPeso(Integer Peso){
         
-        if (Peso >= 0 && Peso < 1) {
+        if (Peso > 1 && Peso <= 2) {
             adiccion = adiccion+10;
         }
-        if (Peso > 1 && Peso < 2) {
+        if (Peso > 2 && Peso <= 3) {
             adiccion = adiccion+50;
         }
-        if (Peso >= 2 && Peso < 3) {
-            adiccion = adiccion+80;
+        if (Peso > 3 && Peso <=4) {
+            adiccion = adiccion+80;              
         }
-        if (Peso > 3) {
+        if (Peso > 4) {
             adiccion = adiccion+100;              
         }
-        
     } 
 
-  /*  public Double calcularPrecio(){
-       
-
-        //return precioBase + adicion:
+    public Double calcularPrecio(){
+        Double resultado = precioBase + adiccion;
+        return resultado;
     }
-    */
 }
