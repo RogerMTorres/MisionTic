@@ -1,31 +1,32 @@
 package nuevaclase;
-public class PrecioTotal {
-    private Double totalDispositivos;
-    private Double totalPortatiles;
-    private Double totalTablets;
-    private Dispositivo[] listadDispositivos;
-    //  Constructores 
-    PrecioTotal(Dispositivo[] pDispositivos){
-        totalDispositivos =0.0;
-        totalPortatiles =0.0;
-        totalTablets=0.0; 
+//public class PrecioTotal {
+    // private Double totalDispositivos;
+    // private Double totalPortatiles;
+    // private Double totalTablets;
+    // private Dispositivo[] pDispositivos;
+    // //  Constructores 
+    // PrecioTotal(Dispositivo[] pDispositivos){
+    //     totalDispositivos = 0d;
+    //     totalPortatiles = 0d;
+    //     totalTablets = 0d;
+    //     for (int i = 0; i < pDispositivos.length; i++){
+    //         if (pDispositivos[i] instanceof Portatil){
+    //             totalPortatiles += pDispositivos[i].calcularPrecio();
+    //         } else if (pDispositivos[i] instanceof Tablet){
+    //             totalTablets += pDispositivos[i].calcularPrecio();
+    //         } 
+    //         totalDispositivos += pDispositivos[i].calcularPrecio();
+    //     }
+    // }
+    
+    // //Metodos  
+    // public void mostrarTotales(){
+
         
-    }
-    //Metodos  
-    public void mostrarTotales(){
+    //     System.out.println("La suma del precio de los dispositivos es de " +totalDispositivos);
 
-        for (int i = 0; i < listadDispositivos.length; i++) {
-            if (listadDispositivos[i].getClass().getName().contains("Portatil"))
-                totalPortatiles += listadDispositivos[i].calcularPrecio();
-            else if (listadDispositivos[i].getClass().getName().contains("Tablet"))
-                totalTablets += listadDispositivos[i].calcularPrecio();
-            else
-                totalDispositivos += listadDispositivos[i].calcularPrecio();
-        }
-        System.out.println("La suma del precio de los dispositivos es de " +totalDispositivos);
+    //     System.out.println("La suma del precio de los Computatores portátiles es de "+ totalPortatiles);
 
-        System.out.println("La suma del precio de los Computatores portátiles es de "+ totalPortatiles);
-
-        System.out.println("La suma del precio de los Computatores portátiles es de "+ totalTablets);
-    }
-}
+    //     System.out.println("La suma del precio de los Computatores portátiles es de "+ totalTablets);
+    // }
+//}
