@@ -93,7 +93,6 @@ public class VistaRequerimientosReto4 extends JFrame{
           panelcontenido.add(btnConsulta3);
 
     }
-    
     public static void requerimiento1 (){
 
         try {
@@ -121,6 +120,45 @@ public class VistaRequerimientosReto4 extends JFrame{
             System.err.println("Se ha generado el siguiente" + e.getMessage());
         } 
     }
+//buscar implementar el Jtable para arreglar el requerimiento dos 
+    // public static void requerimiento1 (){
+
+    //     try {
+    //         ArrayList<Liderporsalario> lista = control.Requerimiento_1();
+
+    //         // String [] nombres_Columnas = new String[10];
+    //         // nombres_Columnas[0] = "Nombre";
+    //         // nombres_Columnas[1] = "Primer Apellido";
+    //         // nombres_Columnas[0] = "ID del Lider";
+    //         // nombres_Columnas[0] = "Salario";
+
+    //         String salida = "";
+
+    //         Object [][] datossalida; 
+
+           
+
+    //         for (Liderporsalario lider : lista) {
+            
+    //            salida += lider.getNombre();
+    //            salida += "\t";
+    //            salida += lider.getApellido();
+    //            salida += "\t";
+    //            salida += "\t";
+    //            salida += lider.getId_lider();
+    //            salida += "\t";
+    //            salida += lider.getSalario();
+    //            salida += "\n";
+
+    //            datossalida.toString(lider);
+    //         }
+            
+    //         areaDeTexto.setText(salida);
+
+    //     } catch (Exception e) {
+    //         System.err.println("Se ha generado el siguiente" + e.getMessage());
+    //     } 
+    // }
 
     public static void requerimiento2 (){
 
